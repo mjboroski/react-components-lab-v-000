@@ -12,7 +12,7 @@ const BUTCHER_PRODUCTS = [
 export class OlderCoaster extends Component {
   render() {
     return (
-      <div>
+      <div className="oldercoaster">
         <p>Two grannies having the time of their life!</p>
         <p>Passengers:</p>
         <ul>
@@ -39,10 +39,10 @@ export class ButcherShop extends Component {
   render() {
     const products = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>BUTCHER_PRODUCTS[1]</li>, etc...]
     return (
-      <div>
+      <div className="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
-        {products}
+          {products}
         </ul>
       </div>
     )
@@ -50,11 +50,14 @@ export class ButcherShop extends Component {
 }
 
 
-export class App extends Component {
+
+export class App extends React.Component {
   render() {
     return (
       <div id="app">
-
+        <OlderCoaster />
+        <InFrontOfYou />
+        <ButcherShop />
       </div>
     )
   }
