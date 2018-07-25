@@ -36,8 +36,8 @@ export class InFrontOfYou extends Component {
 }
 
 export class ButcherShop extends Component {
-  const products = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>BUTCHER_PRODUCTS[1]</li>, etc...]
   render() {
+    const products = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>BUTCHER_PRODUCTS[1]</li>, etc...]
     return (
       <div>
         <p>Hello! We have the following products for sale today:</p>
